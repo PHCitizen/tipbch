@@ -1,0 +1,16 @@
+{
+  "name": "tipbch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "browserify ./src/index.js -o ./dist/index.bundle.js",
+    "dist": "yarn bundle && node ./src/dist.js"
+  },
+  "dependencies": {
+    "@bchdomains/address-encoder": "^0.2.16"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
